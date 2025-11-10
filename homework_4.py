@@ -17,7 +17,7 @@ class ContactList:
         if Contact.validate_phone_number(phone_number):
 
            new_contact = Contact(name, phone_number)
-           ContactList.all_contacts.append(new_contact)
+           cls.all_contacts.append(new_contact)
            print(f"Контакт {name} успешно добавлен!")
         else:
            print (ValueError("Номер должен содержать ровно 10 цифр:"))
