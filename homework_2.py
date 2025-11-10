@@ -1,4 +1,6 @@
 
+
+
 class Person :
     def __init__(self, name, birth_date, occupation,  higher_education):
             self.name = name
@@ -26,7 +28,13 @@ class Friend(Person):
     def introduce (self):
            super().introduce()
            print(f"хобби друга {self.hobby}")
-
+class BestFriend(Friend):
+    def __init__(self,name, birth_date, occupation, higher_education, hobby, shared_memory ):
+          super().__init__(name,birth_date,occupation,higher_education,hobby, )
+          self.shared_memory = shared_memory
+    def introduce (self):
+           super().introduce()
+           print(f"Есть что спомнить {self.shared_memory}")
 
 person = Person("Азамат", "12.05.2000", "Ветеринар", "Да")
 
@@ -34,8 +42,14 @@ classmate = Classmate("Бекзат", "20.03.2001", "Студент", "Нет", 
 
 friend = Friend("Эрмек", "15.07.1999", "Программист", "Да", "играть в шахматы")
 
+bestFriend = BestFriend("Артур" ,"16.06.2000","МЧС","да","футбол", "Лучшие")
 
-person.introduce ()
-classmate.introduce()
-friend.introduce()
+
+# person.introduce ()
+# classmate.introduce()
+# friend.introduce()
+# BestFriend.introduce()
+
+for person in [person, classmate, friend, bestFriend]:
+  person.introduce()
 
