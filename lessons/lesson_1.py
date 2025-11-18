@@ -27,3 +27,23 @@ print(car_Subaru.model == car_honda.model)
 #     def draw(self,location):
 #         print(f"Bus {self.model} is driving in {location}")
     # def test_bus(self
+
+
+# stage
+#
+# production  - V1.0.0.0
+#
+#
+# feat/
+# fix/
+# update/
+# hotfix/
+# delete/
+#
+#
+# git commit -m "fix: fixing bug on login page"
+# git commit -m "feat: add new feature"
+# git commit -m "update: update feature"
+# git commit -m "hotfix: fix bug on login page"
+#
+# git commit -m "hotfix: fix bug on login page"
