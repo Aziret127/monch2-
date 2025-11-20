@@ -22,7 +22,6 @@ class Distance:
         return Distance(value_in_meters / coef, target_unit)
 
     def __add__(self, other):
-        # просто предполагаем, что other — объект Distance
         total_meters = self.to_meters() + other.to_meters()
         return Distance.from_meters(total_meters, self.unit)
 
